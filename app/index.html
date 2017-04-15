@@ -24,41 +24,58 @@
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-  <h1 class="tlt">Writers of the Past</h1>
+
+  <!-- The navigation menu to browse through the authors -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#ralph">Ralph</a>
+    <a href="#thoreau">Thoreau</a>
+    <a href="#melville">Melville</a>
+    <a href="#edwards">Edwards</a>
+    <a href="#fuller">Fuller</a>
+  </div>
+
+  <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+  <div id="mainContainer">  
+  <h1 class="tlt" style="display:none;">Writers of the Past</h1>
         <p>
             A site that survives the most notable American writers from centuries ago and provides a new light of their influences.
         </p>
         <div class="links">
             <a href="#">Transcendentalists</a> &bull; <a href="#">History</a> &bull; <a href="#" class="twitter-share-button" data-text='Elevator.js, "back to top" buttons have never been so real! -'  data-via="twholman">Impact</a>
         </div>
-        <div class="down-arrow">&#9660;</div>
+        <div id="ralph" class="down-arrow">&#9660;</div>
           <img src="images/ralph.png">
           <br>
           <h2>Ralph Waldo Emerson</h2>
+          <p>"I have seen Emerson, the first man I have ever seen," wrote George Eliot in her diary many years ago. Carlyle uses similar expressions in his letters at least a score of times. Sentences like the following appear very often:—
+"It remains true and will remain, what I have often told you, that properly there is no voice in this world which is completely human to me but your voice only."
+Again:—
+"In the whole world I hardly get to my spoken human word any other word of response that is authentically human. God help us, this is growing a very lonely place, this distracted dog-kennel of a world."</p>
           <img src="images/design1.png">
-        <div class="down-arrow">&#9660;</div>
-          <img src="images/thoreau.JPG">
+        <div id="thoreau" class="down-arrow">&#9660;</div>
+          <img src="images/thoreau.jpg">
           <br>
           <h2>Henry David Thoreau</h2>
           <img src="images/design2.png">
-        <div class="down-arrow">&#9660;</div>
+        <div id="emily" class="down-arrow">&#9660;</div>
           <img src="images/emily.png">
           <br>
           <h2>Emily Dickinson</h2>
           <img src="images/design3.png">
-        <div class="down-arrow">&#9660;</div>
-          <img src="images/melville.JPG">
+        <div id="melville" class="down-arrow">&#9660;</div>
+          <img src="images/melville.jpg">
           <br>
           <h2>Herman Melville</h2>
           <img src="images/design4.png">
-        <div class="down-arrow">&#9660;</div>
-          <img src="images/edwards.JPG">
+        <div id="edwards" class="down-arrow">&#9660;</div>
+          <img src="images/edwards.jpg">
           <br>
           <h2>Jonathan Edwards</h2>
           <img src="images/design5.png">
-        <div class="down-arrow">&#9660;</div>
-          <img src="images/fuller.JPG">
+        <div id="fuller" class="down-arrow">&#9660;</div>
+          <img src="images/fuller.jpg">
           <br>
           <h2>Margaret Fuller</h2>
           <img src="images/design6.png">
@@ -103,17 +120,11 @@
                 </div>
             </div>
         </div>
+  </div>
 
         <script>
 
-            // Simple elevator usage.
-            var elementButton = document.querySelector('.elevator');
-            var elevator = new Elevator({
-                element: elementButton,
-                duration: 15000,
-                mainAudio: 'songs/motherearth.mp3', // Music from http://www.bensound.com/
-                endAudio:  'songs/sound.mp3'
-            });
+            
 
         </script>
     
