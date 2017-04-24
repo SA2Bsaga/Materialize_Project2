@@ -98,7 +98,7 @@ var Elevator = function(options) {
 
         for( var option in defaults ){
 
-            var t = options[option] === undefined && typeof option !== "function";
+            var t = options[option] === undefined && typeof option !== 'function';
 
             if(t){
 

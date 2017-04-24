@@ -1,11 +1,6 @@
 $(function () {
 	$('.tlt').show().textillate();
 
-
-});
-
-$( "h1" ).click(function() {
-  $( this ).fadeTo( "slow", 0.33 );
 });
 
 // Simple elevator usage.
@@ -25,19 +20,34 @@ $( "h1" ).click(function() {
 
                 },
                 endCallback: function() {
-                  $(".tlt").fadeTo("slow", 0.33);
-
+                  $('.tlt').delay(4000).fadeTo('slow', 0.33);
+                  $('.book2').fadeIn(500);
+                  $('#intro').delay(5500).fadeTo('slow', 0.30);
+                  $('.links').delay(7000).fadeTo('slow', 0.20);
                 }
             });
 
 function openNav() {
-    	document.getElementById("mySidenav").style.width = "250px";
-    	document.getElementById("mainContainer").style.marginLeft = "250px";
-    	document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    	document.getElementById('mySidenav').style.width = '250px';
+    	document.getElementById('mainContainer').style.marginLeft = '250px';
+    	//document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     }
 
-    function closeNav() {
-    	document.getElementById("mySidenav").style.width = "0";
-    	document.getElementById("mainContainer").style.marginLeft = "0";
-    	document.body.style.backgroundColor = "white";
+function closeNav() {
+	document.getElementById('mySidenav').style.width = '0';
+	document.getElementById('mainContainer').style.marginLeft = '0';
+	//document.body.style.backgroundColor = "white";
+}
+
+$('a[href^="#"]').on('click', function(event) {
+
+    var target = $(this.getAttribute('href'));
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+            scrollTop: target.offset().top
+        }, 1000);
     }
+
+});
