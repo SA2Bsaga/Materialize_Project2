@@ -14,8 +14,38 @@ body {
 }
 
 h1 {
-  font-size: 90px;
+  text-align: left;
+  font-family: 'Tangerine', cursive;
+  font-size: 70px;
   z-index: 0;
+}
+
+#intro {
+  position: relative;
+  width: 350px;
+  text-align: left;
+  right: 180px;
+  font-size: 20px;
+}
+
+.subjects {
+  position: relative;
+  font-family: 'Neuton', serif;
+  width: 350px;
+  left: 180px;
+  bottom: 168px;
+}
+
+.authors {
+  display: inline;
+  font-family: 'Neuton', serif;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.names {
+  font-family: 'Tangerine', cursive;
+  font-size: 55px;
 }
 
 #mainContainer {
@@ -164,18 +194,18 @@ img {
     margin-top: 25px;
     font-size: 16px;
     font-weight: bold;
+    width: 100%;
 }
 
-.links a, iframe {
-    margin-left: 10px;
-    margin-right: 10px;
+.links p, iframe {
+    
 }
 
 iframe {
     margin-bottom: -3px;
 }
 
-.links a {
+.links p {
     text-decoration: none;
     color: #0C1F31;
 }
@@ -194,7 +224,7 @@ h1:after {
 }
 
 .loader {
-  margin: 5% auto 30px;
+  margin: .5% auto;
 }
 
 .book {
@@ -210,29 +240,29 @@ h1:after {
   width: 30px;
   height: 45px;
   border: 2px solid #FFFFFF;
-  border-left: 1px solid #8455b2;
+  border-left: 1px solid #e9e746;
   margin: 0;
   position: absolute;
   right: -4px;
   top: -4px;
   overflow: hidden;
-  background: #8455b2;
+  background: #e9e746;
   transform-style: preserve-3d;
   -webkit-transform-origin: left center;
   transform-origin: left center;
 }
 
-.book .page:nth-child(1) {
+.book:hover .page:nth-child(1) {
   -webkit-animation: pageTurn 1.2s cubic-bezier(0, .39, 1, .68) 1.6s infinite;
   animation: pageTurn 1.2s cubic-bezier(0, .39, 1, .68) 1.6s infinite;
 }
 
-.book .page:nth-child(2) {
+.book:hover .page:nth-child(2) {
   -webkit-animation: pageTurn 1.2s cubic-bezier(0, .39, 1, .68) 1.45s infinite;
   animation: pageTurn 1.2s cubic-bezier(0, .39, 1, .68) 1.45s infinite;
 }
 
-.book .page:nth-child(3) {
+.book:hover .page:nth-child(3) {
   -webkit-animation: pageTurn 1.2s cubic-bezier(0, .39, 1, .68) 1.2s infinite;
   animation: pageTurn 1.2s cubic-bezier(0, .39, 1, .68) 1.2s infinite;
 }
@@ -249,12 +279,12 @@ h1:after {
     background: #4b1e77;
   }
   40% {
-    background: rebeccapurple;
+    background: brown;
     -webkit-transform: rotateY( -180deg);
     transform: rotateY( -180deg);
   }
   100% {
-    background: rebeccapurple;
+    background: brown;
     -webkit-transform: rotateY( -180deg);
     transform: rotateY( -180deg);
   }
@@ -268,11 +298,11 @@ h1:after {
     background: #4b1e77;
   }
   40% {
-    background: rebeccapurple;
+    background: brown;
     transform: rotateY( -180deg);
   }
   100% {
-    background: rebeccapurple;
+    background: brown;
     transform: rotateY( -180deg);
   }
 }
@@ -280,12 +310,12 @@ h1:after {
 /**************Book animation 2 ********************/
 .book2 {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  top: 0px;
+  bottom: 235px;
+  left: 0px;
+  right: 0px;
   margin: auto;
-  width: 40.5rem;
+  width: 46.5rem;
   height: 18.5rem;
   perspective: 70rem;
   z-index: -1;
@@ -301,8 +331,8 @@ h1:after {
   left: 0.25rem;
   background-color: #e9e6c4;
   transform: rotateY(0deg);
-  width: 20rem;
-  height: 26.66rem;
+  width: 23rem;
+  height: 30.66rem;
   text-align: right;
   font-size: 8px;
   color: #777;

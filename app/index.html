@@ -16,6 +16,7 @@
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
+    <link href="https://fonts.googleapis.com/css?family=Neuton|Tangerine" rel="stylesheet"> 
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <script src="scripts/elevator.js"></script>
@@ -35,20 +36,27 @@
     <a class="authors" href="#fuller">Fuller</a>
   </div>
 
-  <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776; Start Reading</span>
+  <span style="font-size:10px;cursor:pointer" onclick="openNav()">
+    <div class="loader book">
+      <figure class="page"></figure>
+      <figure class="page"></figure>
+      <figure class="page"></figure>
+    </div>
+    Start Reading!
+  </span>
 
   <div id="mainContainer">  
-  <h1 class="tlt" style="display:none;">Writers of the Past</h1>
+  <h1 class="tlt" style="display:none;">               Writers of      the Past</h1>
         <p id="intro">
             A site that survives the most notable American writers from centuries ago and provides a new light of their influences.
         </p>
         <div class="links">
-            <a href="#">Transcendentalists</a> &bull; <a href="#">History</a> &bull; <a href="#" class="twitter-share-button" data-text='Elevator.js, "back to top" buttons have never been so real! -'  data-via="twholman">Impact</a>
+            <p class="subjects">Transcendentalists<br> &bull;</p><p class="subjects">History<br> &bull;</p><p class="subjects">Impact</p>
         </div>
         <div id="ralph" class="down-arrow">&#9660;</div>
           <img src="images/ralph.png">
           <br>
-          <h2>Ralph Waldo Emerson</h2>
+          <h2 class="names">Ralph Waldo Emerson</h2>
           <p>"I have seen Emerson, the first man I have ever seen," wrote George Eliot in her diary many years ago. Carlyle uses similar expressions in his letters at least a score of times. Sentences like the following appear very often:—
 "It remains true and will remain, what I have often told you, that properly there is no voice in this world which is completely human to me but your voice only."
 Again:—
@@ -63,14 +71,14 @@ Again:—
         <div id="thoreau" class="down-arrow">&#9660;</div>
           <img src="images/thoreau.jpg">
           <br>
-          <h2>Henry David Thoreau</h2>
+          <h2 class="names">Henry David Thoreau</h2>
           <img src="images/design2.png">
           <p>"I was filled with an inexpressible confidence, and persued my labor cheerfully with a calm trust in the future."</p><br>
           <p>When I paused to lean on my hoe, these sounds and sights I heard & saw anywhere in the row, a part of the inexhaustible entertainment which the country offers."</p>
         <div id="emily" class="down-arrow">&#9660;</div>
           <img src="images/emily.png">
           <br>
-          <h2>Emily Dickinson</h2>
+          <h2 class="names">Emily Dickinson</h2>
           <h2>The Way to Find your Place in this World</h2>
           <ul>
             <li>Existentialist</li>
@@ -81,7 +89,7 @@ Again:—
         <div id="melville" class="down-arrow">&#9660;</div>
           <img src="images/melville.jpg">
           <br>
-          <h2>Herman Melville</h2>
+          <h2 class="names">Herman Melville</h2>
           <img src="images/design4.png">
           </div>
           <h2>What's a Doppelganger's Existence?</h2>
@@ -94,12 +102,12 @@ Again:—
         <div id="edwards" class="down-arrow">&#9660;</div>
           <img src="images/edwards.jpg">
           <br>
-          <h2>Jonathan Edwards</h2>
+          <h2 class="names">Jonathan Edwards</h2>
           <img src="images/design5.png">
         <div id="fuller" class="down-arrow">&#9660;</div>
           <img src="images/fuller.jpg">
           <br>
-          <h2>Margaret Fuller</h2>
+          <h2 class="names">Margaret Fuller</h2>
           <img src="images/design6.png">
         <div class="down-arrow">&#9660;</div>
         <p>
@@ -145,13 +153,6 @@ Again:—
   </div>
 
 <!-- START -->
-  <div class="loader book">
-  <figure class="page"></figure>
-  <figure class="page"></figure>
-  <figure class="page"></figure>
-</div>
-
-<h1>Reading</h1>
 
 <div class="book2" style="display: none;">
   <span class="page2 turn"></span>
