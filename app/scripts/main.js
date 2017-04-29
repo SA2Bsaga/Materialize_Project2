@@ -9,7 +9,7 @@ $(function () {
             var elevator = new Elevator({
                 element: elementButton,
                 //targetElement: targetDiv,
-                duration: 15000,
+                duration: 29600,
                 mainAudio: 'songs/motherearth.mp3', // Music from http://www.bensound.com/
                 endAudio:  'songs/sound.mp3',
                 startCallback: function() {
@@ -29,7 +29,7 @@ $(function () {
 
 function openNav() {
     	document.getElementById('mySidenav').style.width = '250px';
-    	document.getElementById('mainContainer').style.marginLeft = '250px';
+    	//document.getElementById('mainContainer').style.marginLeft = '250px';
     	//document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
     }
 

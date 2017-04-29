@@ -36,11 +36,20 @@ h1 {
   bottom: 168px;
 }
 
-.authors {
+.authors, .conclusion {
   display: inline;
   font-family: 'Neuton', serif;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.content {
+  font-family: 'Neuton', serif;
+  text-shadow: 2px 2px 2px lightblue;
+}
+
+.conclusion, .names {
+  text-shadow: 2px 2px 2px lightblue;
 }
 
 .names {
@@ -147,6 +156,10 @@ img {
   width: 300px;
 }
 
+.pics {
+  box-shadow: 10px 20px 30px lightblue;
+}
+
 .down-arrow {
     font-size: 120px;
     margin-top: 90px;
@@ -228,7 +241,7 @@ h1:after {
 }
 
 .book {
-  border: 2px solid #000000;
+  border: 2px solid #FFFFFF;
   width: 60px;
   height: 45px;
   position: relative;
@@ -239,14 +252,14 @@ h1:after {
   display: block;
   width: 30px;
   height: 45px;
-  border: 2px solid #FFFFFF;
-  border-left: 1px solid #e9e746;
+  border: 2px solid #44FFFF;
+  border-left: 1px solid #e9e6c4;
   margin: 0;
   position: absolute;
   right: -4px;
   top: -4px;
   overflow: hidden;
-  background: #e9e746;
+  background: #e9e6c0;
   transform-style: preserve-3d;
   -webkit-transform-origin: left center;
   transform-origin: left center;
@@ -276,7 +289,7 @@ h1:after {
     transform: rotateY( 0deg);
   }
   20% {
-    background: #4b1e77;
+    background: #e9e6b7;
   }
   40% {
     background: brown;
@@ -311,7 +324,7 @@ h1:after {
 .book2 {
   position: absolute;
   top: 0px;
-  bottom: 235px;
+  bottom: 200px;
   left: 0px;
   right: 0px;
   margin: auto;
