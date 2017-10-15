@@ -526,4 +526,4 @@ var Elevator = function(options) {
 
 
 
-module.exports = Elevator;
+//module.exports = Elevator;
